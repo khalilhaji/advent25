@@ -127,7 +127,7 @@ func TestSumInvalid_Happy(t *testing.T) {
 		{38593856, 38593862},
 	}
 
-	res := sumInvalid(ranges)
+	res := sumInvalid(ranges, invalidIDs)
 
 	assert.Equal(t, 1227775554, res)
 }
